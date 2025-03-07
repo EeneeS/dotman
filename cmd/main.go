@@ -22,6 +22,11 @@ func main() {
 	case "init":
 		commands.Init()
 	case "add":
+		if len(args) < 3 {
+			fmt.Println("Please provide a file location")
+			return
+		}
+		commands.Add(os.Args[2])
 	case "remove":
 	case "help":
 	default:

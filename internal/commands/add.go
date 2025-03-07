@@ -16,5 +16,10 @@ func Add(path string) {
 		return
 	}
 
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		fmt.Println("Path not found:", path)
+		return
+	}
+
 	fmt.Println(path)
 }

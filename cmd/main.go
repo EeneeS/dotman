@@ -27,7 +27,6 @@ func main() {
 			return
 		}
 		commands.Add(os.Args[2])
-	case "remove":
 	case "help":
 	default:
 		// This will also be help

@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/eenees/dotman/internal/commands"
 )
 
 func main() {
@@ -18,6 +20,7 @@ func main() {
 
 	switch command {
 	case "init":
+		commands.Init()
 	case "add":
 	case "remove":
 	case "help":
